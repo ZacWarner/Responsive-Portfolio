@@ -161,30 +161,31 @@ textarea {
     margin: 60% 0px;
     padding: 10px 5px;
 }
-
-@media screen and (max-width: 980px) {
-    .wrapper {margin:100px 5px; width: auto;}
-    header {height: 60px}
-    .sitenav {width: 760px; float: left; margin: 30px 5px 0 5px; padding: 0;}
-    .sitenav a {margin: 13px 0 0 0; padding: 0;}
-    h1 {margin: 0; padding: 0; float: left;}
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper {margin: 70px 10px 0 10px;}
-    input {width: 700px;}
-    textarea {width: 700px;}
-    
-    
-}
-
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .wrapper {margin: 0 0 0 0;}
     header {height: auto; width: auto; position: static; overflow: auto;}
     h1 {float: left; margin: 0 0 0 0; display: block;}
-    .sitenav {float: left; margin: 0 0 0 0;}
+    .sitenav {float: left; margin: 0 0 0 0; width: 100%;}
     .sitenave a {float: left;}
     .cheat {float: left;}
     input {width: 600px;}
     textarea {width: 600px;}
 }
+
+@media only screen and (max-width: 768px) {
+    .wrapper {margin: 70px 10px 0 10px; width: 100%;}
+    input {width: 90%;}
+    textarea {width: 90%;}
+    
+    
+}
+
+@media only screen and (max-width: 980px) {
+    .wrapper {margin:100px 5px; width: 100%;}
+    header {height: 60px}
+    .sitenav {width: 100%; float: left; margin: 30px 5px 0 5px; padding: 0;}
+    .sitenav a {margin: 13px 0 0 0; padding: 0;}
+    h1 {margin: 0; padding: 0; float: left;}
+}
+
+
